@@ -11,54 +11,70 @@
   </head>
   <body>
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-      <div class="container-fluid">
+    <nav
+      class="navbar navbar-dark navbar-expand-md bg-transparent sticky-top mynavbar"
+    >
+      <div class="container">
         <a class="navbar-brand" href="#">
           <img src="img/logowhite.png" alt="" />
         </a>
         <button
           class="navbar-toggler"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Profile</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Book</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Event</a>
-            </li>
-          </ul>
-          <!-- <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form> -->
+        <div
+          class="offcanvas offcanvas-end text-bg-dark"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+              SixBook
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="navbar-nav topBotomBordersOut ms-auto">
+              <a class="nav-link" href="#home" id="active">Home</a>
+              <a class="nav-link" href="#profile">Profile</a>
+              <a class="nav-link" href="#book">Book</a>
+              <a class="nav-link" href="#event">Event</a>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
     <!-- Navbar End -->
 
+    <!-- Hero Start -->
+    <section
+      id="hero"
+      class="hero w-100 h-100 p-3 mx-auto d-flex justify-content-center align-items-center text-white"
+    >
+      <main>
+        <h4>Welcome To</h4>
+        <h1>SixBook</h1>
+        <a href="#about" class="btn btn-outline-light mt-4 px-4">About</a>
+      </main>
+    </section>
+
+    <!-- Hero End -->
+
     <!-- Bootstrep -->
     <script src="bootsrap/js/bootstrap.min.js"></script>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
