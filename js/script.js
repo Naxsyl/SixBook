@@ -9,13 +9,14 @@ offCanvas.addEventListener("show.bs.offcanvas", function () {
 });
 // ketika offcanvas ditutup
 offCanvas.addEventListener("hidden.bs.offcanvas", function () {
-  stickyTop.style.overflow = "hidden";
   document.querySelector(".navbar-nav").classList.add("topBotomBordersOut");
 });
 
 // ketika navbar di scorll
 window.addEventListener("scroll", function () {
   if (window.scrollY > 0) {
+    stickyTop.style.overflow = "hidden";
+
     document.querySelector(".mynavbar").classList.add("scroll");
   } else {
     document.querySelector(".mynavbar").classList.remove("scroll");

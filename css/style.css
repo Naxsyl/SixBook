@@ -73,6 +73,10 @@ body {
   min-height: 100vh;
 }
 
+.hero main {
+  margin-bottom: 10rem;
+}
+
 .hero h1 {
   font-size: 8rem;
   font-weight: bold;
@@ -88,6 +92,26 @@ body {
 }
 
 /* Hero End */
+
+/* Profile Start */
+.profile {
+  padding-top: 6rem;
+  padding-bottom: 8rem;
+}
+.profile .row .col-md-4 {
+  background-image: url(../img/perpus.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.profile .row .col h1 {
+  font-size: 3.2rem;
+}
+
+.profile .row .col .btn {
+  font-size: larger;
+}
+/* Profile End */
 
 /* Media Query */
 /* laptop */
@@ -108,7 +132,7 @@ body {
   html {
     font-size: 65%;
   }
-
+  /* Navbar Start */
   .navbar-brand img {
     width: 65%;
   }
@@ -120,16 +144,38 @@ body {
     font-size: 2rem;
     text-align: center;
   }
+  /* Navbar End */
+  /* Hero Start */
+  .hero {
+  }
+  /* Hero End */
+  /* profile start */
+  .profile .row .col h1 {
+    font-size: 1.9rem;
+  }
+  /* profile end */
 }
 
 /* mobile phone */
 
 @media (max-width: 576px) {
   html {
-    font-size: 60%;
+    font-size: 60% !important;
   }
-
+  /* Navbar Start */
   .navbar-brand img {
     width: 60%;
+  }
+  /* Navbar End */
+
+  /* Hero Start */
+  .hero h1 {
+    font-size: 6rem;
+    font-weight: bold;
+  }
+  /* Hero End */
+
+  .profile .row .col h1 {
+    /* font-size: 2rem; */
   }
 }
