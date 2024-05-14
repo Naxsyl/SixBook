@@ -2,7 +2,7 @@ body {
   background-color: #151515;
   font-size: 1.2rem;
   font-family: "Montserrat", sans-serif;
-  min-height: 2000px;
+  min-height: 3000px;
 }
 
 /* Navbar Start */
@@ -112,6 +112,29 @@ body {
   font-size: larger;
 }
 /* Profile End */
+
+/* Book Start */
+
+.book .container h3 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.book .container .row {
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+}
+
+.book .container .row::-webkit-scrollbar {
+  display: none;
+}
+
+.book .container .row .col .card-body {
+  color: #fff;
+  background-color: #1e1e1e;
+  border-radius: 0 0 3% 3%;
+}
+/* Book End */
 
 /* Media Query */
 /* laptop */

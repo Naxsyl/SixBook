@@ -6,6 +6,7 @@ const offCanvas = document.querySelector(".offcanvas");
 offCanvas.addEventListener("show.bs.offcanvas", function () {
   stickyTop.style.overflow = "visible";
   document.querySelector(".navbar-nav").classList.remove("topBotomBordersOut");
+  document.querySelector(".mynavbar").classList.remove("scroll");
 });
 // ketika offcanvas ditutup
 offCanvas.addEventListener("hidden.bs.offcanvas", function () {
